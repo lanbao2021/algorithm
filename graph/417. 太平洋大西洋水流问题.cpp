@@ -13,12 +13,18 @@ private:
         if(i < 0 || i >= m || j < 0 || j >= n || visited[i][j])
             return;
         
+        
         visited[i][j] = true;
         
-        dfs(heights, visited, i - 1, j); // 上
-        dfs(heights, visited, i + 1, j); // 下
-        dfs(heights, visited, i, j - 1); // 左
-        dfs(heights, visited, i, j + 1); // 右
+        if(i - 1 >= 0 && heights[i - 1][j] >= heights[i][j]) // 上
+            dfs(heights, visited, i - 1, j);
+        if(i + 1 < m && heights[i + 1][j] >= heights[i][j]) // 下
+            dfs(heights, visited, i + 1, j);
+        if(j - 1 >= 0 && heights[i][j - 1] >= heights[i][j]) // 左
+            dfs(heights, visited, i, j - 1);
+        if(j + 1 < n && heights[i][j + 1] >= heights[i][j]) // 右
+            dfs(heights, visited, i, j + 1);
+        
     }
 
 public:
