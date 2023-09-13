@@ -12,5 +12,5 @@ Record the study of algorithm.
 * [ ] [graph/127. 单词接龙.cpp](https://leetcode.cn/problems/word-ladder/description/)
 * [ ] [graph/841. 钥匙和房间.cpp](https://leetcode.cn/problems/keys-and-rooms/description/)
 * [ ] [graph/463. 岛屿的周长.cpp](https://leetcode.cn/problems/island-perimeter/)
-* [ ] [graph/1971. 寻找图中是否存在路径.cpp](https://leetcode.cn/problems/find-if-path-exists-in-graph)
+* [ ] [graph/1971. 寻找图中是否存在路径.cpp](https://leetcode.cn/problems/find-if-path-exists-in-graph) - 并查集基础
 * [ ] [graph/684. 冗余连接.cpp](https://leetcode.cn/problems/redundant-connection/)
